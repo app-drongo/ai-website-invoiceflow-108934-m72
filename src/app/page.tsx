@@ -1,4 +1,4 @@
-import { Hero, Pricing, Contact } from '@/components/sections/home'
+import { Hero, Pricing, Contact, CallToAction } from '@/components/sections/home'
 
 export default function HomePage() {
   return (
@@ -8,6 +8,9 @@ export default function HomePage() {
       </section>
       <section id="pricing">
         <Pricing />
+      </section>
+      <section id="cta">
+        <CallToAction />
       </section>
       <section id="contact">
         <Contact />
