@@ -52,12 +52,29 @@ export default function Navigation(props: NavigationProps) {
           <div className="flex-shrink-0">
             <Button
               variant="ghost"
-              className="text-xl font-bold text-primary hover:text-primary/90 p-0 h-auto"
+              className="text-primary hover:text-primary/90 p-2 h-auto"
               onClick={handleBrandClick}
               data-editable-href="brandHref"
               data-href={config.brandHref}
+              aria-label="Webline - Go to homepage"
             >
-              <span data-editable="brandName">{config.brandName}</span>
+              <svg
+                className="h-8 w-auto md:h-10"
+                viewBox="0 0 200 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 15L35 45L50 15M50 15L65 45L80 15M90 15V45M90 15H110C115.523 15 120 19.477 120 25V35C120 40.523 115.523 45 110 45H90M90 30H110M130 15V45M130 15L155 45M155 15V45M165 15V45M165 15H185C190.523 15 195 19.477 195 25V35C195 40.523 190.523 45 185 45H165M165 30H185"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="15" cy="30" r="3" fill="currentColor" />
+                <circle cx="85" cy="30" r="3" fill="currentColor" />
+                <circle cx="160" cy="30" r="3" fill="currentColor" />
+              </svg>
             </Button>
           </div>
 
